@@ -12,7 +12,7 @@ const Weather = () => {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': 'f34b2163c7mshfaa4c459e01cd35p16fcb9jsn517092c67579',
+                'X-RapidAPI-Key': process.env.REACT_APP_MESSENGER,
                 'X-RapidAPI-Host': 'community-open-weather-map.p.rapidapi.com'
             }
         };
