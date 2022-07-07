@@ -1,20 +1,14 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {useState} from 'react';
+import Weather from './components/weather/Weather';
 
 function App() {
-  const [activateText, setActivateText] = useState(false)
-  const activate = () => {
-    setActivateText(true)
-  }
+  // const [cityName, setCityName] = useState("")
+  // const [activateText, setActivateText] = useState(false)
   return (
     <div className="App">
       <h1>🔥 SizzleMeter 🔥</h1>
-      <p>{activateText ? "Test" : null}</p>
-      <input type="text" placeholder="Search.."/>
-      <button onClick={activate}>Submit</button>
-      <p>Type in the name of any city to find out what the SizzleMeter rates it!</p>
+      <Weather />
     </div>
   );
 }
